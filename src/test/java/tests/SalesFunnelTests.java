@@ -1,3 +1,5 @@
+package tests;
+
 import com.utils.DriverFactory;
 import com.utils.DriverType;
 import org.openqa.selenium.By;
@@ -10,12 +12,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class salesFunnelTests {
+public class SalesFunnelTests extends BaseTest {
 
     @Test
     public void sampleTest() throws InterruptedException {
 
-        WebDriver driver = DriverFactory.getDriver(DriverType.CHROME);
+//        WebDriver driver = DriverFactory.getDriver(DriverType.CHROME);
 
         driver.get("https://hello.friday.de/quote/selectPrecondition");
 //        driver.switchTo().frame(0);
@@ -29,7 +31,6 @@ public class salesFunnelTests {
         driver.quit();
 
     }
-
 
 
 }
