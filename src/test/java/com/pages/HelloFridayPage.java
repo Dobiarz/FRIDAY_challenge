@@ -61,6 +61,16 @@ public class HelloFridayPage {
         return this;
     }
 
+    public HelloFridayPage chooseFuel(String fuel) {
+        clickLabelWithText(fuel);
+        return this;
+    }
+
+    public HelloFridayPage chooseHP(String hp) {
+        clickLabelWithText(hp);
+        return this;
+    }
+
     public HelloFridayPage chooseCar(String car) {
         clickLabelWithText(car);
         return this;
