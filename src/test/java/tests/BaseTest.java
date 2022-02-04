@@ -13,11 +13,12 @@ public abstract class BaseTest {
     @BeforeMethod
     public void setup() {
         driver = DriverFactory.getDriver(DriverType.CHROME);
+        driver.get("https://hello.friday.de/quote/selectPrecondition");
+        driver.manage().window().maximize();
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-//        driver.quit();
-//        DriverFactory.resetDriver();
-//    }
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
 }
