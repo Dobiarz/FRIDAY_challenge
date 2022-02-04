@@ -15,9 +15,9 @@ public abstract class BaseTest {
         driver = DriverFactory.getDriver(DriverType.CHROME);
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-        DriverFactory.resetDriver();
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        driver.quit();
+//        DriverFactory.resetDriver();
+//    }
 }
