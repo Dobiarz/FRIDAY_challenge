@@ -1,10 +1,13 @@
 package tests;
 
 import com.pages.HelloFridayPage;
+import com.utils.TestListner;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(value = {TestListner.class})
 public class SalesFunnelTest extends BaseTest {
 
     @Test(dataProvider = "carsList")
