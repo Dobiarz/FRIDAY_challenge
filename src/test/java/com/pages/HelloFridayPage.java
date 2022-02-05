@@ -41,7 +41,7 @@ public class HelloFridayPage {
         return this;
     }
 
-    public void clickLabelWithText(String text) {
+    private void clickLabelWithText(String text) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[text()='" + text + "']"))).click();
     }

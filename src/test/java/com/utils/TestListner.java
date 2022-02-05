@@ -13,7 +13,5 @@ public class TestListner implements ITestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }

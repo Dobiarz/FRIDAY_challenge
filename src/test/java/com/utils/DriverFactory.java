@@ -11,7 +11,9 @@ public class DriverFactory {
 
     public static WebDriver getDriver(DriverType browser) {
         if (driver == null) {
+
             switch (browser) {
+
                 case CHROME:
                     System.setProperty("webdriver.chrome.driver", "/home/tomasz/Desktop/FRIDAY_challenge/src/main/resources/executables.drivers/chromedriver");
                     driver = new ChromeDriver();
@@ -32,5 +34,4 @@ public class DriverFactory {
     public static void resetDriver() {
         driver = null;
     }
-
 }

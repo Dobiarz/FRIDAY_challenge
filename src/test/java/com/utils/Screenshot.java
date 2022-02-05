@@ -10,12 +10,6 @@ import java.io.IOException;
 
 class Screenshot {
 
-//    private WebDriver driver;
-//
-//    public Screenshot(WebDriver driver) {
-//        this.driver = driver;
-//    }
-
     static void takeScreenshot(WebDriver driver) throws IOException {
         int randomNumber = (int) (Math.random() * 1000);
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;

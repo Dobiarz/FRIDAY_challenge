@@ -1,3 +1,4 @@
 /target/
 .idea
 /src/main/recources/screenshots
+/src/test/java/tests/cookiesTest.java
