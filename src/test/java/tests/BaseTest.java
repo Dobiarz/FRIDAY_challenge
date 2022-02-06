@@ -3,7 +3,7 @@ package tests;
 import com.utils.DriverFactory;
 import com.utils.DriverType;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 public abstract class BaseTest {
@@ -18,7 +18,7 @@ public abstract class BaseTest {
 
     }
 
-    @AfterMethod
+    @AfterTest
     public void tearDown() {
         driver.quit();
     }

@@ -2,9 +2,6 @@ package tests;
 
 import com.pages.HelloFridayPage;
 import com.utils.TestListner;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -15,11 +12,6 @@ public class SalesFunnelTest extends BaseTest {
 
     @Test(dataProvider = "carsList")
     public void singleCarTest(String brand, String model, String shape, String fuel, String hp, String car, String month, String year) throws InterruptedException {
-
-        Thread.sleep(5000);
-
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Alle akzeptieren']")));
 
         HelloFridayPage helloFridayPage = new HelloFridayPage(driver)
                 .clickFurtherButton()
