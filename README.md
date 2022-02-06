@@ -11,3 +11,11 @@ Project is created with:
 
 ## Tests description
 Tests pick three different car brands, each brand with three different cars.
+
+## Setup and Launch
+Instal browsers:
+Chrome Version 98.0.4758.80
+Firefox 96.0
+
+To run this project use maven:
+mvn test
